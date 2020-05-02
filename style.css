@@ -1,0 +1,78 @@
+#ici_banner {background-color: rgb(240, 240,240); padding:.5rem; text-align:center; }
+
+.copy-block {
+  // This font-size and line-height set the
+  // basis for all children of .copy-block.
+  font-size: $font-size;
+  line-height: $line-height;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 180%;
+  }
+  h3 {
+    font-size: 160%;
+  }
+  h4 {
+    font-size: 140%;
+  }
+  h5 {
+    font-size: 120%;
+  }
+  h6 {
+    font-size: 100%;
+  }
+  p, ul, ol, dl, pre, figure {
+    margin: 1em 0;
+  }
+  ul ul, ul ol, ol ol, ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  p, ul, ol, li, dl, dt, dd, pre, figure, figcaption, h1, h2, h3, h4, h5, h6 {
+    line-height: inherit;
+  }
+  ul, ol, dd {
+    padding-left: 1.5em;
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: 1.5em;
+    }
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  dt {
+    font-weight: bold;
+    &::after {
+      content: ':'
+    }
+  }
+  blockquote {
+    border-left: 8px solid transparentize($color-text, .75);
+    padding-left: 1em;
+    [dir='rtl'] & {
+      border-left: none;
+      border-right: 8px solid transparentize($color-text, .75);
+      padding-left: 0;
+      padding-right: 1em;
+    }
+  }
+  figcaption {
+    margin-top: 0.5em;
+  }
+}
