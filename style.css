@@ -1,10 +1,14 @@
 #ici_banner {background-color: rgb(240, 240,240); padding:.5rem; text-align:center; }
 
-.copy-block {
+#ici_banner img {display: inline;}
+#ici-hero img {max-width: 250px;}
+#ici-hero {background-color:rgb(83, 48, 119	)}
+
+a {color: navy;}
   // This font-size and line-height set the
   // basis for all children of .copy-block.
-  font-size: $font-size;
-  line-height: $line-height;
+  font-size: 1em;
+  line-height: 1.6em;
   > :first-child {
     margin-top: 0;
   }
@@ -13,10 +17,12 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
   h1 {
+    color:rgb(250,250,250	);
     font-size: 200%;
+    margin-top: .5em;
   }
   h2 {
     font-size: 180%;
@@ -75,4 +81,3 @@
   figcaption {
     margin-top: 0.5em;
   }
-}
